@@ -2,7 +2,7 @@
 <app-about-component> </app-about-component>
 <ul>
   <li *ngFor="let user of users"> <!-- Hace un for dentro de la etiqueta. -->
-    {{user}}
+    <app-user [nameUser]="user" ></app-user>
   </li>
 </ul>
 <router-outlet></router-outlet>
